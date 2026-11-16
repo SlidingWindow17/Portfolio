@@ -2,8 +2,8 @@ import { ChevronDown } from "lucide-react";
 import profilePhoto from "../img/profilePhoto.webp";
 import rubiksCubeImg from "../img/RubiksCubeSolver.webp";
 import Google from "../img/Google.webp";
-import WhiteBoard from "../img/Whiteboard.png";
-import ChromeExtension from "../img/ChromeExtension.jpeg";
+import WhiteBoard from "../img/Whiteboard.webp";
+import ChromeExtension from "../img/ChromeExtension.webp";
 import WeatherApp from "../img/WeatherApp.webp";
 import stickyNotes from "../img/stickyNotes.webp";
 
