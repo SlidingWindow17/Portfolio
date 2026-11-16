@@ -1,5 +1,5 @@
 import { ChevronDown } from "lucide-react";
-import profilePhoto from "../img/profilePhoto.png";
+import profilePhoto from "../img/profilePhoto.webp";
 import rubiksCubeImg from "../img/RubiksCubeSolver.webp";
 import Google from "../img/Google.webp";
 import WhiteBoard from "../img/Whiteboard.png";
@@ -15,6 +15,7 @@ const Portfolio = () => {
       description:
         "A real-time collaborative whiteboard platform supporting simultaneous multi-user editing with sub-second latency, powered by React, Socket.IO, and Node.js",
       imageUrl: WhiteBoard,
+      GitHubUrl: "https://github.com/SlidingWindow17/WhiteBoard",
     },
     {
       title: "Rubiks Cube Solver",
@@ -22,6 +23,7 @@ const Portfolio = () => {
       description:
         "An interactive virtual 3x3 Rubik's Cube solver utilizing Korf's IDA* algorithm to optimize state-space search, solving complex 13-move scrambles in under 10 seconds.",
       imageUrl: rubiksCubeImg,
+      GitHubUrl: "https://github.com/SlidingWindow17/RubiksCubeSolver",
     },
     {
       title: "Go Algo",
@@ -29,6 +31,7 @@ const Portfolio = () => {
       description:
         "A web-based search engine for competitive programming problems, featuring a custom Node.js web scraper that aggregates problem data from platforms like Codeforces into a MongoDB Atlas database",
       imageUrl: Google,
+      GitHubUrl: "https://github.com/SlidingWindow17",
     },
     {
       title: "Bookmark Extension",
@@ -36,6 +39,7 @@ const Portfolio = () => {
       description:
         "A Chrome extension built with JavaScript that enables seamlessly bookmark and manage coding problems directly from the leetcode.com platform, utilizing Chrome's Storage API and Content Scripts.",
       imageUrl: ChromeExtension,
+      GitHubUrl: "https://github.com/SlidingWindow17",
     },
     {
       title: "Sticky Notes",
@@ -43,6 +47,7 @@ const Portfolio = () => {
       description:
         "A Chrome extension built with JavaScript that enables seamlessly bookmark and manage coding problems directly from the leetcode.com platform, utilizing Chrome's Storage API and Content Scripts.",
       imageUrl: stickyNotes,
+      GitHubUrl: "https://github.com/SlidingWindow17/StickyNotes",
     },
 
     {
@@ -51,6 +56,7 @@ const Portfolio = () => {
       description:
         "Become tech savvy in just 5 minutes. A curated newsletter platform designed for quick tech insights.",
       imageUrl: WeatherApp,
+      GitHubUrl: "https://github.com/SlidingWindow17",
     },
   ];
 
@@ -126,18 +132,19 @@ const Portfolio = () => {
               </div>
 
               <p className="text-gray-600 text-base leading-relaxed mb-4">
-                Hi, I'm Shubham. I am currently pursuing my Master of Computer
-                Applications (MCA) at MANIT.
+                I am a final-year Master of Computer Applications student at
+                Maulana Azad National Institute of Technology (MANIT), Bhopal,
+                with a strong foundation in data structures, algorithms, and
+                scalable system design.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-8">
-                I am passionate about building scalable applications, tackling
-                complex algorithmic challenges on Codeforces, and designing
-                digital products. I use a blend of clean code and solid
-                architectural patterns to make digital products or simply
-                beautiful stuff.
+                I worked as a freelance Web Developer, designing and deploying
+                custom, responsive web solutions for clients on Fiverr. My
+                interests lie in backend development, cloud infrastructure, and
+                AI-assisted tooling.
               </p>
               <a
-                href="/resume.pdf"
+                href="https://www.linkedin.com/in/shubhamgaurofficial/"
                 className="font-raleway text-sm font-semibold text-gray-800 border-b-2 border-gray-300 pb-1 hover:border-black hover:text-black transition-all duration-300"
               >
                 You can find my resume here.
@@ -171,7 +178,8 @@ const Portfolio = () => {
 
               {projects.map((project, index) => (
                 <a
-                  href="#"
+                  href={project.GitHubUrl}
+                  target="_blank"
                   key={index}
                   className="group block bg-white rounded-xl card-shadow hover:card-shadow-hover transition-all duration-300 hover:-translate-y-2 overflow-hidden flex flex-col"
                 >
@@ -228,10 +236,11 @@ const Portfolio = () => {
                   Github
                 </h3>
                 <a
-                  href="https://github.com/shubham"
+                  target="_blank"
+                  href="https://github.com/SlidingWindow17"
                   className="font-opensans font-light text-[#666] text-[15.5px] hover:text-black transition-colors"
                 >
-                  github.com/shubham
+                  github.com/SlidingWindow17
                 </a>
               </div>
 
@@ -240,14 +249,12 @@ const Portfolio = () => {
                   Social
                 </h3>
                 <div className="flex flex-row gap-6 font-opensans font-light text-[#666] text-[15.5px]">
-                  <a href="#" className="hover:text-black transition-colors">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/shubhamgaurofficial/"
+                    className="hover:text-black transition-colors"
+                  >
                     LinkedIn
-                  </a>
-                  <a href="#" className="hover:text-black transition-colors">
-                    Facebook
-                  </a>
-                  <a href="#" className="hover:text-black transition-colors">
-                    Instagram
                   </a>
                 </div>
               </div>
@@ -259,7 +266,7 @@ const Portfolio = () => {
           <hr className="border-t border-gray-300 w-full" />
           <footer className="py-8 text-center text-[14px] text-[#333] font-opensans font-light">
             <p>
-              Baked with <span className="text-gray-600">♥</span> by Shubham
+              Baked with <span className="text-red-800">♥</span> by Shubham
             </p>
           </footer>
         </div>
